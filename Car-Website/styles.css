@@ -1,0 +1,232 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 60px;
+    /* border: 4px solid #000; */
+}
+.burger{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 15px;
+}
+
+.close{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    padding: 15px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: #333;
+}
+.nav-links li:hover{
+background-color: #555;
+padding: 10px;
+}
+
+
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+#welcome{
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    gap: 20px;
+    margin-top: 20px;
+    /* border: 1px solid #000; */
+}
+
+.intro{
+    width: 50%;
+    /* border: 3px solid blue; */
+}
+
+.intro h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+    color:  green;
+
+}
+
+.caption{
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    padding-bottom: 20px; 
+}
+
+.more-info{
+    font-size: 22px;
+    padding: 0 20px;
+}
+
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.explore button{
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.explore button:hover{
+    background-color: green;
+}
+
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.social-media a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    padding: 8px 20px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.social-media a:hover{
+    background-color: green;
+    color: white;
+
+}
+
+.hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* border: 3px solid green; */
+}
+
+.hero-image img{
+    width: 80%;
+}
+
+/* responsive design from destop down to mobile*/
+
+
+
+/* Responsive design for tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px){
+.burger{
+    display: block;
+}
+
+.logo{
+    display: none;
+}
+
+.nav-links{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    z-index: 10px;
+    padding-right: 20px;
+}
+
+.nav-links.show{
+    display: flex;
+}
+
+.nav-links li{
+    padding: 10px 0;
+    text-align: center;
+}
+
+#welcome{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.intro{
+    width: 100%;
+    padding: 0 20px;
+}
+
+.hero-image{
+    width: 100%;
+    padding: 0 20px;
+}
+
+.intro h1{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .intro h1{
+        font-size: 25px;
+    }
+
+    .caption{
+        font-size: 20px;
+    }
+
+    .more-info{
+        font-size: 18px;
+    }
+
+    .explore button{
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .social-media a{
+        font-size: 20px;
+        padding: 6px 16px;
+    }
+}
+
+}
