@@ -99,6 +99,3 @@ npm run build && node dist/index.js
 to build the code
 
 pnpm run build
-
-Manage cookies
-Do not share my personal information
