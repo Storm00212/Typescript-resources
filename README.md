@@ -24,6 +24,9 @@ The following will be generated in package.json file
 
 
 <img width="710" height="445" alt="1746032626852" src="https://github.com/user-attachments/assets/47ce9e9a-b26f-4815-aea0-6fcd2f15fd3a" />
+you will see this as well in dev dependencies
+
+<img width="422" height="87" alt="1746032767093" src="https://github.com/user-attachments/assets/fda7cefb-1536-4fbb-9d54-4b894646cb04" />
 
 
 Create tsconsfig.json file- This file configures how your typescript code should be executed
